@@ -59,3 +59,20 @@ def processar_pipeline_dados(caminho_csv):
     df['sigma_c_cap_pf'] = calcular_incerteza_c_cap(df['sigma_c_medido_pf'])
     
     return df
+
+# ==========================================
+# 2. MODELAGEM (REGRESSÃO LINEAR)
+# ==========================================
+def calcular_regressao_com_pesos(df):
+    x = df['w_m_inv']
+    y = df['c_cap_pf']
+    pesos = 1 / df['sigma_c_cap_pf']
+    coeficientes, matriz_cov = np.polyfit(x, y, 1, w=pesos, cov=True)
+    a, b = coeficientes
+    sigma_a, sigma_b = np.sqrt(np.diag(matriz_cov))
+    return a, b, sigma_a, sigma_b
+
+def calcular_permissividade(a, sigma_a):
+    eps_0 = a / AREA
+    sigma_eps_0 = eps_0 * np.sqrt((sigma_a / a)**2 + (SIGMA_AREA / AREA)**2)
+    return eps_0, sigma_eps_0
