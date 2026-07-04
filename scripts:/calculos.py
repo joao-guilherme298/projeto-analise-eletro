@@ -12,7 +12,6 @@ SIGMA_AREA = 0.0002  # Incerteza da área
 def calcular_distancia_media(df):
     """
     Pega as três colunas de distância (d1, d2, d3) e calcula a média.
-    O eixo (axis=1) diz ao Pandas para calcular a média na horizontal (linha por linha).
     """
     colunas_distancia = df[['d1_mm', 'd2_mm', 'd3_mm']]
     return colunas_distancia.mean(axis=1)
