@@ -17,8 +17,7 @@ def calcular_distancia_media(df):
 def calcular_incerteza_d(df):
     """
     Calcula o desvio padrão das distâncias medidas.
-    O desvio padrão (std) mede o quanto as três medidas (d1, d2, d3) variaram entre si.
-    ddof=1 garante que estamos usando a fórmula amostral corretiva.
+    A incerteza é calculada usando o desvio padrão amostral (ddof=1).
     """
     colunas_distancia = df[['d1_mm', 'd2_mm', 'd3_mm']]
     return colunas_distancia.std(axis=1, ddof=1)
@@ -32,7 +31,7 @@ def calcular_incerteza_w(distancia_media, sigma_d):
     return (1000 / (distancia_media ** 2)) * sigma_d
 
 def calcular_c_cap(c_medido):
-    """Subtrai a capacitância residual do valor medido[cite: 12]."""
+    """Subtrai a capacitância residual do valor medido."""
     return c_medido - C_RES
 
 def calcular_incerteza_c_cap(sigma_c_medido):
