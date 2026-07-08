@@ -16,7 +16,7 @@ Um pipeline de dados de ponta a ponta construído para ingerir, limpar e modelar
 
 | Validação do Modelo (Regressão) | Análise de Variância (Resíduos) |
 | :---: | :---: |
-| <img src="grafico_regressao.png" width="450"/> | <img src="grafico_residuos.png" width="450"/> |
+| <img src="graficos/grafico_regressao.png" width="450"/> | <img src="graficos/grafico_residuos.png" width="450"/> |
 
 ---
 
@@ -39,7 +39,7 @@ O motor de cálculo foi modularizado, separando as regras de negócio da camada 
 
 ## 🗂️ Estrutura do Projeto
 
-
+```text
 projeto-analise-eletro/
 ├── data/
 │   ├── capacitor_data.csv          # Dataset bruto (Input)
