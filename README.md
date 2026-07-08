@@ -16,7 +16,7 @@ Um pipeline de dados de ponta a ponta construído para ingerir, limpar e modelar
 
 | Validação do Modelo (Regressão) | Análise de Variância (Resíduos) |
 | :---: | :---: |
-| <img src="graficos/grafico_regressao.png" width="450"/> | <img src="graficos/grafico_residuos.png" width="450"/> |
+| <img src="graficos/grafico_regressao.png" width="450"/> | <img src="graficos/grafico_residos.png" width="450"/> |
 
 ---
 
@@ -50,6 +50,7 @@ projeto-analise-eletro/
 └── README.md
 └── graficos
 
+```
 ## 🚀 Como Executar 
 
 Clone o repositório para a sua máquina local: `git clone https://github.com/joao-guilherme298/projeto-analise-eletro.git` 
