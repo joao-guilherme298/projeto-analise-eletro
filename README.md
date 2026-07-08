@@ -39,7 +39,7 @@ O motor de cálculo foi modularizado, separando as regras de negócio da camada 
 
 ## 🗂️ Estrutura do Projeto
 
-```text
+
 projeto-analise-eletro/
 ├── data/
 │   ├── capacitor_data.csv          # Dataset bruto (Input)
