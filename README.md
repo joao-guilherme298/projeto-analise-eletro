@@ -2,11 +2,11 @@
 
 # ⚡ ETL & Modelagem Estatística: Validação Eletrostática
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-Data_Processing-150458.svg?logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-Statistics-013243.svg?logo=numpy)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Data_Viz-ffffff.svg?logo=python)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg?logo=jupyter)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=python&logoColor=black)
+![Jupyter](https://img.shields.io/badge/Jupyter-%23F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)
 
 Um pipeline de dados de ponta a ponta construído para ingerir, limpar e modelar dados ruidosos de sensores de laboratório. O projeto automatiza o tratamento de incertezas experimentais e aplica regressão linear com pesos para extrair constantes físicas a partir de variáveis geométricas.
 
@@ -14,10 +14,9 @@ Um pipeline de dados de ponta a ponta construído para ingerir, limpar e modelar
 
 ## 📸 Dashboards e Observabilidade
 
-<div align="center">
-  <img src="grafico_regressao.png" alt="Gráfico de Regressão Linear" width="400"/>
-  <img src="grafico_residos.png" alt="Análise de Resíduos" width="400"/>
-</div>
+| Validação do Modelo (Regressão) | Análise de Variância (Resíduos) |
+| :---: | :---: |
+| <img src="grafico_regressao.png" width="450"/> | <img src="grafico_residuos.png" width="450"/> |
 
 ---
 
@@ -49,3 +48,12 @@ projeto-analise-eletro/
 │   └── calculos.py                 # Módulo central de regras de negócio e matemática
 ├── analise.ipynb                   # Notebook de orquestração e visualização
 └── README.md
+└── graficos
+
+## 🚀 Como Executar 
+
+Clone o repositório para a sua máquina local: `git clone https://github.com/joao-guilherme298/projeto-analise-eletro.git` 
+
+Instale as dependências necessárias: `pip install pandas numpy matplotlib` 
+
+Execute o pipeline abrindo o arquivo `analise.ipynb` em seu ambiente Jupyter preferido.
